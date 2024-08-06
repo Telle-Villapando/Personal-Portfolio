@@ -1,10 +1,10 @@
 
 
 :root{
-    --bg-color: #111111;
+    --bg-color: #080808;
     --second-bg-color: #151515;
-    --text-color: white;
-    --main-color: #7c1212;
+    --text-color: #f6cfb2;
+    --main-color: #450205;
     
 }
 html{
@@ -34,7 +34,7 @@ body{
     position: absolute;
     top: 47px;
     right: 20px;
-    background-color: #fff;
+    background-color:var(--text-color);
     border: 2px solid var(--main-color);
     width: 45px;
     height: 25px;
@@ -114,9 +114,9 @@ section{
 }
 .home-content{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row-reverse;
     text-align: center;
     margin-top: 3rem;
 }
@@ -145,7 +145,7 @@ span{
 }
 .home-img img{
     position: relative;
-    top: 2rem;
+    
     width: 30vw;
     border-radius: 50%;
     align-items: end;
