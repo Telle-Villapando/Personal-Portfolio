@@ -5,6 +5,7 @@
     --second-bg-color: #151515;
     --text-color: white;
     --main-color: #7c1212;
+    
 }
 html{
     font-size: 62.5;
@@ -18,20 +19,57 @@ body{
 .header{
     position: fixed;
     top: 0%;
-    left: 0%;
-    padding: 2rem 12%;
+    right: 0%;
+    padding: 2rem 25%;
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     z-index: 100;
  
 }
+/*-- toggle button -- */
+.toggle{
+    position: absolute;
+    top: 47px;
+    right: 20px;
+    background-color: #fff;
+    border: 2px solid var(--main-color);
+    width: 45px;
+    height: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.toggle::before{
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    margin-top: 1.9px;
+    background: var(--main-color);
+    border-radius: 50%;
+    transition: 0.5s ease;
+}
+
+/*toggle hover*/
+.toggle:hover{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 3.85rem;
+    font-weight: 500;
+    transition: 0.3 ease-in-out;
+    border-bottom: 3px solid transparent;
+
+}
+/*
 .logo{
     font-size: 3rem;
-    color: var(--text-color)
-    fontw 800;
+    color: var(--text-color);
+    font-weight: 800;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
@@ -40,6 +78,7 @@ body{
     transform: scale(1.1);
 
 }
+    */
 img{
     width: 400px;
     height: auto;
@@ -106,9 +145,10 @@ span{
 }
 .home-img img{
     position: relative;
-    top: 3rem;
-    width: 22vw;
+    top: 2rem;
+    width: 30vw;
     border-radius: 50%;
+    align-items: end;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
     transition: 0.4s ease-in-out;
