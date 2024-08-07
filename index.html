@@ -13,25 +13,37 @@
 
     <body>
         <header class="header">
+
+
+           <a href="#" class="logo">Telle</a>
+               
           
             
-            <i class='bx bx-menu' id="menu-icon"></i>
-
-            <nav class="navbar">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-                
-                <div class="toggle">
-                
-                </div>
-
-            </nav>
-           
             
 
+            <nav class="navbar">
+                
+             
+                <div> <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#education">Education</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                   
+                </div>
+                
+                <i class='bx bx-menu' id="menu-icon"></i>
+              
+                
+                <!--
+                <div class="toggle">
+                
+                </div>-->
+            <!-- <img src="heart-circle-regular-24.png" class="loggo">
+                
+            <img src="heart-circle-solid-24.png" id="icon-toggle">
+          -->
+           
         </header>
         
 
@@ -263,7 +275,21 @@
                 Christelle Villapando | All Rights Reserved
             </p>
         </footer>
-        <script src="script.js"> </script> 
+        <script> 
+
+            var icon = document.getElementById("icon-toggle");
+            
+            icon.onclick = function(){
+                document.body.classList.toggle("dark-theme");
+                if(document.body.classList.contains("dark-theme")){
+                    icon.src = "heart-circle-solid-24.png";
+                }
+                else{
+                    icon.src = "heart-circle-solid-24.png";
+                }
+            }
+
+        </script> 
 
     </body>
 
