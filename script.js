@@ -3,6 +3,7 @@ let navbar = document.querySelector('.navbar');
 let sections = document.querySelector('section');
 let navLinks = document.querySelector('header nav a');
 
+
 window.onscroll = () => {
     sections.forEach(sec => {
         let top = window.scrollY;
@@ -25,4 +26,5 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
+
 
