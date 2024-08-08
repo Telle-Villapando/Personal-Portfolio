@@ -57,12 +57,12 @@ body{
     top: 0;
     right: 0;
     width: 100%;
-    padding: 4rem 12% 4rem;
+    padding: 2rem 0 2rem 0;
     background: var(--text-color);
     opacity: 65%;
     backdrop-filter: blur(10px);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     z-index: 5; /*z index is for overlap of elements*/
  
@@ -75,6 +75,7 @@ body{
     font-weight: 800;
     cursor: pointer;
     transition: 0.3s ease;
+    margin-left: 8rem;
 
 }
 
@@ -101,9 +102,10 @@ img{
    
     
     color: var(--second-color);
-    margin-left: 4rem;
+    margin-right: 4rem;
     font-weight: 500;
     transition: 0.3 ease;
+    display: inline-flex;
 
  }
  .hearticon img{
@@ -125,6 +127,7 @@ img{
     font-weight: 500;
     transition: 0.3 ease;
     border-bottom: 3px solid transparent;
+   
 }
 .navbar a:hover,
 .navbar a.active{
@@ -139,7 +142,7 @@ img{
 
 section{
     min-height: 100vh;
-    padding: 10rem 9% 10rem;
+    padding: 2rem 4% 2rem;
 }
 .home{
     display: flex;
@@ -234,6 +237,7 @@ box-shadow: 0 0 50px var(--second-color),
     font-weight: 600;
     transition: 0.3s ease-in-out;
     cursor: pointer;
+    margin-left: 3rem;
 }
 #btn-about:hover{
     transform: scale(1.05);
@@ -371,7 +375,7 @@ box-shadow: 0 0 50px var(--second-color),
     height: 400px;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: start;
+    justify-content: stretch;
 }
 .card{
     width: 80px; 
@@ -449,11 +453,22 @@ input:checked + label .description-card{
 }
 .about{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10rem;
     background: var(--main-color);
     color: var(--text-color);
+}
+.about-header{
+    margin: 2rem;
+    padding-top: 2rem;
+}
+.about-direction{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    justify-content: center;
 }
 .about h2 span{
     color: var(--text-color);
@@ -489,7 +504,7 @@ input:checked + label .description-card{
 }
 .about-content p{
     font-size: 1.6rem;
-    margin: 2rem 0 3rem;
+    margin: 2rem 0 2rem 3rem;
 }
 .about-content .text-animation span::before{
     content: 'Web Developer';
@@ -856,11 +871,13 @@ input:checked + label .description-card{
         border-bottom-left-radius: 2rem;
         border-left: 2 px solid var(--main-color);
         border-bottom: 2px solid var(--main-color);
-        display: none;
+        display: flex;
+        flex-wrap: nowrap;
 
     }
     .navbar.active{
-        display: block;
+        display: flex;
+        flex-wrap: nowrap;
     }
     .navbar a{
         display: block;
@@ -943,4 +960,7 @@ input:checked + label .description-card{
 .skills{
     background: var(--main-color);
 }
-.skills .skill-container
+.skills .skill-container{
+
+
+}
