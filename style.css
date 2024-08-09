@@ -168,11 +168,11 @@ span{
 .home-content h3{
     margin-bottom: 2rem;
     margin-top: 1rem;
-    font-size: 3.5rem;
+    font-size: 5.5rem;
 
 }
 .home-content h1{
-    font-size: 7rem;
+    font-size: 15rem;
     font-weight: 700;
     margin-top: 1.5rem;
     line-height: 1;
@@ -194,7 +194,7 @@ box-shadow: 0 0 50px var(--second-color),
             0 0 100px var(--second-color);
 }
 .home-content p{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 500;
     line-height: 1.8;
     max-width: 1000px;
@@ -503,7 +503,7 @@ input:checked + label .description-card{
     font-size: 2.6rem;
 }
 .about-content p{
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     margin: 2rem 0 2rem 3rem;
 }
 .about-content .text-animation span::before{
@@ -538,22 +538,30 @@ input:checked + label .description-card{
     color: var(--text-color);
 }
 .services h2{
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     color: var(--text-color);
 }
 .service-container{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
+    flex-display: row;
     align-items: center;
     gap: 2.5rem;
+    margin-top: 10vh;
+    justify-content: space-between;
 }
 .service-box{
+    margin:
     background-color: var(--main-color);
     color: var(--text-color);
-    height: 250px;
+    height: 198px;
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    width: 38vh;
+    display: inline-flex;
+    margin-top: 5rem;
+    
 }
 .service-box:hover{
     background: var(--second-color);
@@ -645,7 +653,7 @@ input:checked + label .description-card{
     top: 10px;
 }
 .timeline-date{
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 800;
     color: var(--text-color);
     margin: 6px 0 15px;
@@ -665,15 +673,15 @@ input:checked + label .description-card{
 
 }
 .timeline-content h3{
-    font-size: 20px;
+    font-size: 3rem;
     color: var(--text-color);
     margin: 0 0 10px;
-    font-weight: 500;
+    font-weight: 50rem;
 
 }
 .timeline-content{
     color: var(--text-color);
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 300;
     line-height: 22px;
 }
@@ -837,8 +845,11 @@ input:checked + label .description-card{
     }
     .services-containers{
         padding-bottom: 7rem;
-        grid-template-columns: repeat(2,1fr);
+        padding-top: 10rem;
+        display: flex;
+        flex-direction: row;
         margin: 0 5rem;
+
     }
 }
 @media(max-width:991px){
@@ -866,7 +877,7 @@ input:checked + label .description-card{
         right: 0;
         left: 50%;
         padding: 1rem 3%;
-        background: rgba(0, 0, 0, 0.0);
+        ackground: rgba(69, 2, 5, 1);
         backdrop-filter: blur(20px);
         border-bottom-left-radius: 2rem;
         border-left: 2 px solid var(--main-color);
@@ -890,15 +901,16 @@ input:checked + label .description-card{
         margin-right: 5rem 4rem;
     }
     .home-content h3{
-        font-size: 2.6rem;
+        font-size: 5.5rem;
     }
     .home-content h1{
-        font-size: 8rem;
+        font-size: 15rem;
         margin-top: 3rem;
     }
     .home-content p{
          max-width: 600px;
          margin: 0 auto;
+         font-size: 2.5rem;
     }
     .home-img img{
         width: 100vw;
@@ -916,6 +928,31 @@ input:checked + label .description-card{
         margin-bottom: 3rem;
 
     }
+    /*--------- hobbies-------*/
+    .test{
+        margin:0;
+        padding:0;
+    }
+    .hobbies {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 15px 0;
+
+      }
+      
+      .hobbies img {
+        flex-wrap: wrap;
+        width: 320px;
+        height: 320px;
+        margin: 10px 0;
+
+      }
+      
+      .hobbies::after {
+        content: "";
+        width: 350px;
+      }
     .services h2{
         margin-bottom: 3rem;
     }
@@ -953,14 +990,36 @@ input:checked + label .description-card{
     
 
 
+.container-contaner-hobby{
+    display: flex;
+    justify-content: stretch;
+    padding: 0;
+    margin-top: 20rem;
+    flex-wrap: wrap;
+}
 
-   
+
     
 /*SKILL*/
+.container-container{
+    display: flex;
+    justify-content: stretch;
+    padding: 0;
+    margin-top: 20rem;
+    
+
+
+
+}
+.skills h2{
+    position: center;
+}
 .skills{
     background: var(--main-color);
     text-transform: uppercase;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap
 }
 .skill-container h1{
     text-align: center;
@@ -972,7 +1031,7 @@ input:checked + label .description-card{
 }
 .skill-container{
     width:: 500px;
-    margin: 24vh 10vh 40rem 4rem;
+    margin: 8vh 10vh 78rem 4rem;
     color: var(--second-color);
     padding: 20px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
