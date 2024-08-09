@@ -1000,6 +1000,7 @@ input:checked + label .description-card{
             max-width: 37%;
             height: auto;
             z-index: 16;
+            /*ORIGINAL*/
             
         }
         .home-content p{
