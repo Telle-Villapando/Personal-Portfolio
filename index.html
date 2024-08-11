@@ -6,9 +6,11 @@
             content="width=device-width,initial-scale=1.0">
             <title> Personal Portfolio </title>
             <link rel="stylesheet" href="style.css">
+            <!--Box icons- link-->
             <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-            
-
+            <!--Font Awesome Link-->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+            <script src="script.js" defer></script>
 
     </head>
 
@@ -53,6 +55,7 @@
         
             <div class="home-content">
                 
+                
                 <h1>I'm <span>Telle</span></h1>
                 <h3 class="text-animation">
                     I'm a <span></span>
@@ -79,11 +82,13 @@
         
                 </div>
             </div>
-
+<!--
+            
                 <div class="home-img">
                     <img src="2.png" class ="profile-pic" alt="">
                 </div>
                 
+                -->
             
         </section>
 
@@ -94,120 +99,129 @@
         <section class="about" id="about">
             <div class="about-header">
                 <h2 class="heading">About <span>Me</span></h2>
-            <h3 class="text-animation">
-            </h3>
+                <h3 class="text-animation"></h3>
             </div>
-            <div class="container-container-hobby">
-
-               <div class="about-direction">
-
-            <div class="about-content">
-                
-                
-                <p>
-                    Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim
-                     ad minim veniam, quis nostrud exercitation 
-                     ullamco laboris nisi ut aliquip ex ea 
-                     commodo consequat. Duis aute irure dolor 
-                </p>
-                <a href="#" id="btn-about">Read More</a>
-            </div>
-
-<!---- NOTE: ABOUT ME PROFILE
-            <div class="about-img" >
-                <img src="2.png" alt=""> 
-            </div>
-        -->
-            <div class="wrapper">  
-                <!---- Flex Card Animation for Experiences-->
-                <div class="container-card">
-                    
-                    <input type="radio" name="slide" id="c1" checked>
-                    <label for="c1" class="card">
-                     <div class="row">
-                        <div class="icon-card">1</div>
-                        <div class="description-card">
-                            <h4>Hi! 'm Christelle</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus sint nihil adipisci corrupti ipsum ullam architecto quaerat eveniet labore eum!</p>                     
-                        </div>
-                    </div>
-                </label>
-                <input type="radio" name="slide" id="c2" checked>
-                <label for="c2" class="card">
-                 <div class="row">
-                    <div class="icon-card">2</div>
-                    <div class="description-card">
-                        <h4>ACES Organization</h4>
-                        <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio inventore quisquam repellendus commodi illum perferendis fuga neque repudiandae facilis aperiam!</p>                
-                    </div>
+            <div class="about-container">
+                <div class="about-content">  
+                    <div class="about-img" >
+                        <img src="2.png" alt=""> 
+                    </div>    
+                    <p>
+                        Lorem ipsum dolor sit amet, 
+                        consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Ut enim
+                         ad minim veniam, quis nostrud exercitation 
+                         ullamco laboris nisi ut aliquip ex ea 
+                         commodo consequat. Duis aute irure dolor 
+                    </p>
+                    <!--  <a href="#" id="btn-about">Read More</a>-->
+                  
                 </div>
-            </label>
-            <input type="radio" name="slide" id="c3" checked>
-            <label for="c3" class="card">
-             <div class="row">
-                <div class="icon-card">3</div>
-                <div class="description-card">
-                    <h4>Outreach Programs</h4>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat voluptas iure quam nihil excepturi earum, quidem suscipit laboriosam quasi molestias.</p> 
-                </div>
-            </div>
-        </label>
-        <input type="radio" name="slide" id="c4" checked>
-        <label for="c4" class="card">
-         <div class="row">
-            <div class="icon-card">4</div>
-            <div class="description-card">
-                <h4>Robotics Competition</h4>
-                <p> Philippines Robotics Olympiad and World Robotics Olympiad</p> 
-            </div>
-            </div>
-        </label>
-        </div>
-        </div>
-    </div>
-
-
-        <div class="hobbies">
-            <!--
-              <img src="crochet2.jpg">
-            <img src="digi.jpg">
-            <img src="read1.jpg">
-            <img src="ml-logo.jpg">
-            <img src="crochet2.jpg" class="hobby-image"></div>
-            -->
-          
-            
-            <div class="card-hobby">
-                <img src="crochet2.jpg">
-                <h2>Crochet</h2>
-            </div>
-
-            
-            <div class="card-hobby">
-                <img src="digi3.jpg">
-                <h2>Digital Drawing</h2>
-            </div>
-            
-            <div class="card-hobby">
-                <img src="ml-logo.jpg">
-                <h2>Mobile Legends</h2>
-            </div>
-           
-            <div class="card-hobby">
-                <img src="read.jpg" class="hobby-image">
-                <h2>Reading</h2>
-            </div>
-            </div>
-
-
-        
-
-
+                
+   
+    
+                <div class="hobby-container">
+        <!-----Hobby Container Wrapper----->
+        <h1>Hobbies</h1>
+        <div class="wrapper">
          
+            <i class='bx bxs-chevrons-left'></i>
+            <ul class="carousel">
+                <li class="card">
+                    <div class="card-img">
+                        <img src="crochet2.jpg" alt="">
+                        
+                    </div>
+                    <h2>Crochet</h2>
+                </li>
+                <li class="card">
+                    <div class="card-img">
+                        <img src="read1.jpg" alt="">
             
+                    </div>
+                    <h2>Reading</h2>
+                </li>
+                <li class="card">
+                    <div class="card-img">
+                        <img src="ml-logo.jpg" alt="">
+                        
+                    </div>
+                    <h2>Mobile Legends</h2>
+                </li>
+                <li class="card">
+                    <div class="card-img">
+                        <img src="digi3.jpg" alt="">
+                        
+                    </div>
+                    <h2>Digital Drawing</h2>
+                </li>
+                <li class="card">
+                    <div class="card-img">
+                        <img src="crochet2.jpg" alt="">
+                        
+                    </div>
+                    <h2>Gardening</h2>
+                </li>
+    
+            </ul>
+          
+            <i class='bx bxs-chevrons-right' ></i>
+    
+        </div>
+    
+        <!----Interests Container wrapper-->
+        <h1>Interests</h1>
+        <div class="wrapper">
+            <
+            <i class='bx bxs-chevrons-left'></i>
+            <ul class="carousel">
+                <li class="card">
+                    <div class="card-img">
+                        <img src="crochet2.jpg" alt="">
+                        
+                    </div>
+                    <h2>Crochet</h2>
+                </li>
+                <li class="card">
+                    <div class="card-img">
+                        <img src="read1.jpg" alt="">
+            
+                    </div>
+                    <h2>Reading</h2>
+                </li>
+                <li class="card">
+                    <div class="card-img">
+                        <img src="ml-logo.jpg" alt="">
+                        
+                    </div>
+                    <h2>Mobile Legends</h2>
+                </li>
+                <li class="card">
+                    <div class="card-img">
+                        <img src="digi3.jpg" alt="">
+                        
+                    </div>
+                    <h2>Digital Drawing</h2>
+                </li>
+                <li class="card">
+                    <div class="card-img">
+                        <img src="crochet2.jpg" alt="">
+                        
+                    </div>
+                    <h2>Gardening</h2>
+                </li>
+    
+            </ul>
+            
+            <i class='bx bxs-chevrons-right' ></i>
+    
+        </div>
+    
+                </div>
+           
+            </div>
+                   
         </section>
         
 
@@ -249,11 +263,194 @@
 
 
     </div>
-</div>
-
-
 
 </section>
+
+
+<!-- New section: Education and skills combined-->
+<section class="section bg-custom-gray" id="portfolio">
+    <div class="container">
+        <h1 class="mb-5"><span class="text-danger">My</span> Credentials</h1> <!--Title-->
+        <div class="portfolio"> <!--Whole portflio container: (navigation + content)-->
+            <div class="filters"> <!-- Navigation-->
+                <a href="#" data-filter=".education" class="active">
+                    Education
+                </a>
+                <a href="#" data-filter=".extracurricular">
+                    Extracurricular
+                </a>
+                <a href="#" data-filter=".certifications">
+                    Certifications
+                </a>
+                <a href="#" data-filter=".skills">
+                    Skills & Tools
+                </a>
+            </div>
+            <div class="portfolio-container"> <!--Portfolio content, items-->
+                <div class="col-md-6 col-lg-4 web new">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/web-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/web-1.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">WEB</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>   
+                    </div>             
+                </div>
+                <div class="col-md-6 col-lg-4 web new">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/web-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/web-2.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">WEB</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div> 
+                    </div>                         
+                </div>
+                <div class="col-md-6 col-lg-4 advertising new">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/advertising-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                         
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/advertising-2.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">ADVERSTISING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>    
+                    </div>              
+                </div> 
+                <div class="col-md-6 col-lg-4 web">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/web-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/web-4.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">WEB</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>                                                     
+                </div>
+
+                <div class="col-md-6 col-lg-4 advertising"> 
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/advertising-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                               
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/advertising-1.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">ADVERSITING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>                                                       
+                </div> 
+                <div class="col-md-6 col-lg-4 web new">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/web-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
+                       <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/web-3.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">WEB</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>                                                     
+                </div>
+                <div class="col-md-6 col-lg-4 advertising new">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/advertising-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">       
+                       <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/advertising-3.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">ADVERSITING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>                                                       
+                </div> 
+                <div class="col-md-6 col-lg-4 advertising new"> 
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/advertising-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">            
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/advertising-4.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">ADVERTISING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>
+                            
+                </div> 
+                <div class="col-md-6 col-lg-4 branding new">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/branding-1.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                        
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/branding-1.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">BRANDING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div> 
+                <div class="col-md-6 col-lg-4 branding">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/branding-2.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">  
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/branding-2.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">BRANDING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>                                                     
+                </div> 
+                <div class="col-md-6 col-lg-4 branding new">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/branding-3.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">   
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/branding-3.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">BRANDING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>                                                    
+                </div> 
+                <div class="col-md-6 col-lg-4 branding">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/branding-4.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">                      
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/branding-4.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">BRANDING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>                                                      
+                </div> 
+                <div class="col-md-6 col-lg-4 branding">
+                    <div class="portfolio-item">
+                        <img src="assets/imgs/branding-5.jpg" class="img-fluid" alt="Download free bootstrap 4 admin dashboard, free boootstrap 4 templates">          
+                        <div class="content-holder">
+                            <a class="img-popup" href="assets/imgs/branding-5.jpg"></a>
+                            <div class="text-holder">
+                                <h6 class="title">BRANDING</h6>
+                                <p class="subtitle">Expedita corporis doloremque velit in totam!</p>
+                            </div>
+                        </div>
+                    </div>                                                   
+                </div>
+            </div> 
+        </div>  
+    </div>            
+</section>
+
+
 
 
 <!--
