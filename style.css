@@ -448,23 +448,23 @@ box-shadow: 0 0 50px var(--second-color),
 @keyframes words{
     0%,
     20%{
-        content: 'Computer Engineering Student';
+        content: 'Student Leader';
     }
     21%,
     40%{
-        content: "Student Leader";
+        content: "Pioneer";
     }
     41%,
     60%{
-        content: "UI/UX Designer";
+        content: "Graphics Designer";
     }
     61%,
     80%{
-        content: "Content Manager";
+        content: "Digital Artist";
     }
     81%,
     100%{
-        content: "Software Tester";
+        content: "Web Developer";
     }
 }
 @keyframes typing{
