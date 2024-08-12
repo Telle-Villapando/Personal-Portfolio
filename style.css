@@ -72,7 +72,7 @@ canvas {
 }
 
 .wrapper{
-  max-width: 66rem; 
+  max-width: 69rem; 
   width: 100%;
   position: relative;
 }
@@ -120,8 +120,8 @@ canvas {
   overflow: hidden;
 }
 .wrapper:last-child{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  
   justify-content: center;  
 }
 .carousel :where(.card, .card-img){
@@ -578,6 +578,7 @@ animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
   margin-bottom: 5rem;
 }
 
+
 .about-img img {
   width: 20vw;
   border-radius: 50%;
@@ -744,8 +745,8 @@ animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 .timeline-items{
   max-width: 60vh;
   margin: auto;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  
   position: relative;
 }
 .timeline-items::before{
@@ -823,8 +824,8 @@ animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 
 /* Extracurriculars Gallery */
 .extracurriculars-gallery {
-  display: flex;
-    flex-wrap: wrap;
+  display: grid;
+    
     gap: 2rem;
     max-width: 25vh;
     justify-content: flex-start;
@@ -862,8 +863,7 @@ animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
 /* Certifications */
 .certifications-gallery {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 10px;
 }
 
@@ -898,8 +898,7 @@ animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 
 /* Tools Used */
 .tools {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 10px;
 }
 
@@ -1102,9 +1101,23 @@ animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
   .hobby-container{
     min-width: 70vh;
   }
+  .wrapper i:last-child {
+    right: 5rem;
+    margin-right: -8rem;
+}
+.wrapper i{
+  top: 55%;
+    transform: translateY(-50%);
+    margin-left: -2rem;
+}
+.about img{
+  width: 45vh;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 
-@media(max-width:1285px){
+
+@media(max-width:1200px){
     html{
         font-size: 55%;
     }
@@ -1114,7 +1127,6 @@ animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
         display: flex;
         flex-direction: row;
         margin: 0 5rem;
-
     }
   .about-container{
     flex-wrap: wrap;
@@ -1122,10 +1134,56 @@ animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
   .about-content{
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;   
+  } 
+  .about img{
+    width: 30vw;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
   }
-  
+  .home-content h1{
+    font-size: 10rem;
+  }
+  .home-content h3{
+    font-size: 4.5rem
+  }
+  .home-content p{
+    font-size: 2rem;
+  }
+  .heading{
+    font-size: 7rem;
+  }
+  .about-content p{
+    margin-bottom: 2rem;
+  }
+  .hobby-container h1 {
+    font-size: 4.3rem;
+    
+    margin-top: 3rem;
 }
+}
+@media(max-width: 1020px){
+ .profile-pic{
+  display: none;
+ }
+
+  .home-content{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 24rem;
+}
+.home-content h1{
+  font-size: 9rem;
+}
+.home-content h3{
+  font-size: 4rem
+}
+.home-content p{
+  font-size: 2rem;
+}
+}
+
 @media screen and (max-width:980px){
     header{
         padding: 2rem 3%;
@@ -1152,7 +1210,26 @@ animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
       align-items: center;
       display: inline-flex;
     }
+   .wrapper{
+    max-width: 34rem;
+    width: 100%;
+    position: relative;
+   }
+   .home-content h1{
+    font-size: 8rem;
+  }
+  .home-content h3{
+    font-size: 3.5rem
+  }
+  .home-content p{
+    font-size: 1.7rem;
+  }
+  .hobby-container h1 {
+    font-size: 3.3rem;
+    margin-top: 2rem;
 }
+}
+
 @media(max-width:895px){
     #menu-icon{
         display: block;
@@ -1170,7 +1247,6 @@ animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
         border-bottom: 2px solid var(--main-color);
         display: none;
         flex-wrap: column;
-
     }
     .navbar.active{
         display: flex;
@@ -1186,17 +1262,23 @@ animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
         flex-direction: column;
         margin-right: 5rem 4rem;
     }
-    .home-content h3{
-        font-size: 5.5rem;
-    }
     .home-content h1{
-        font-size: 15rem;
-        margin-top: 3rem;
+      font-size: 6.5rem;
+    }
+    .home-content h3{
+      font-size: 3rem
     }
     .home-content p{
-         max-width: 600px;
-         margin: 0 auto;
-         font-size: 2.5rem;
+      font-size: 1.5rem;
+    }
+    .home-content{
+      display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        align-text: center;
+       margin-right: 20rem;
+
     }
   
     .about{
@@ -1211,9 +1293,9 @@ animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
         width: 52vw;
         margin-top: 1rem;
         margin-bottom: 3rem;
-
     }
      }
+
 @media screen and (max-width:600px) {
   .wrapper .carousel{
     grid-auto-columns: 100%;
@@ -1241,17 +1323,13 @@ animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
   .wrapper i:last-child{
     right: 21rem;
     margin-right: -6rem;
-  }
-
-  
-  
+  } 
 }
+
     @media(max-width:412px){
         html{
             font-size: 50%;
-        }
-    
-     
+        }  
         
         .logo{
             font-size: 2.5rem;
@@ -1342,7 +1420,8 @@ animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
             margin: 3rem 0;
             color: (--main-color);
         }
-        
+      }
+      
         
     
     
@@ -1758,6 +1837,7 @@ animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-left: 4rem;
 }
 
 .title-pv {
@@ -1824,8 +1904,9 @@ body {
 }
 
 canvas {
- 
+  position: block;
   vertical-align: bottom;
+  z-index: 0;
   
 }
 
