@@ -18,6 +18,7 @@
 --accent-color:#335449;
 --accent-color2: #c1a7b3;
 --text-color: #ecdce9;
+--dark-comp-gradient: #6f3a3f;
 
 }
 /*secondary color: dark mode*/
@@ -53,8 +54,12 @@
 body{
   background: var(--bg-color);
 }
+canvas {
+  display: relate;
+  vertical-align: bottom;
+}
 .about{
-  background-color: var(--bg-color);
+  background: radial-gradient(circle at top left, var(--bg-color) 50%, var(--main-color));
 }
 .hobby-container{
   display: flex;
@@ -73,9 +78,10 @@ body{
   position: relative;
 }
 .hobby-container h1 {
-  font-size: 4.5rem; /* Adjust the size as needed */
-  margin-bottom: -1.5rem; /* Space below the heading */
-  text-align: center;
+  font-size: 4.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    margin-top: 2.5rem;
 }
 .wrapper i{
   height: 4rem;
@@ -99,12 +105,13 @@ body{
   transition: 1s;
 }
 .wrapper i:first-child{
-  left: -5rem;
+  left: 0;
   
 }
 .wrapper i:last-child{
   right: 5rem;
   margin-right: -6rem;
+  
 }
 .wrapper .carousel{
   display: grid;
@@ -116,6 +123,7 @@ body{
 .wrapper:last-child{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;  
 }
 .carousel :where(.card, .card-img){
   display: flex;
@@ -143,8 +151,8 @@ body{
 }
 
 .card .card-img img{
-  width: 25rem;
-  height: 25rem;
+  width: 27rem;
+  height: 36rem;
   object-fit: cover;
   border-radius: 1rem;
 }
@@ -174,6 +182,7 @@ body{
     color: var(--text-color);
     overflow-x: hidden;
 }
+
 #icontoggle{
     width: 30px;
     cursor: pointer;
@@ -275,7 +284,7 @@ section{
     align-items: center;
     justify-content: center;
     gap: 15rem;
-    background: var(--bg-color);
+    background: linear-gradient(179deg, var(--bg-color) 60%, var(--dark-comp-gradient));
   
 }
 .home-content{
@@ -499,7 +508,8 @@ box-shadow: 0 0 50px var(--second-color),
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: var(--bg-color);
+    background: linear-gradient(183deg, var(--dark-comp-gradient), var(--bg-color));
+    color: var(--text-color);
     color: var(--text-color);
 }
 .about-container{
@@ -1616,7 +1626,7 @@ animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--bg-color);
+    background: linear-gradient(357deg, var(--dark-comp-gradient), var(--bg-color));
     
   }
   .portfolio-container-v{
@@ -1863,4 +1873,66 @@ line-height: 2rem;
 #portfolio-certification:checked ~ .portfolio-content-v .portfolio-education,
 #portfolio-skills:checked ~ .portfolio-content-v .portfolio-education{
   display: none;
+}
+
+/*------- JS Particles --*/
+/* ---- reset ---- */
+
+body {
+  margin: 0;
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
 }
