@@ -29,9 +29,8 @@
     --accent-color2: ;
     --text-color: #5C0105;
  
-    
-    
     }
+    
     /*
     MAIN RED 
     --bg-color:#080808;
@@ -62,7 +61,7 @@ canvas {
   background: radial-gradient(circle at top left, var(--bg-color) 50%, var(--main-color));
 }
 .hobby-container{
-  display: flex;
+  display: grid;
   align-content: flex-end;
   flex-wrap: wrap;
   align-items: center;
@@ -1254,7 +1253,7 @@ animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
             font-size: 2.5rem;
         }
         .header{
-            position: fixed;
+        position: fixed;
         top: 0;
         right: 0;
         width: 100%;
@@ -1291,7 +1290,7 @@ animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
             transition: 0.4s ease-in-out;
             max-width: 37%;
             height: auto;
-            z-index: 16;
+            
             /*ORIGINAL*/
             
         }
@@ -1886,6 +1885,7 @@ body {
 canvas {
   display: block;
   vertical-align: bottom;
+  
 }
 
 /* ---- particles.js container ---- */
@@ -1899,25 +1899,13 @@ canvas {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  
+  
 }
 
 /* ---- stats.js ---- */
 
-.count-particles{
-  background: #000022;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13E8E9;
-  font-size: .8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
+
 
 .js-count-particles{
   font-size: 1.1em;
